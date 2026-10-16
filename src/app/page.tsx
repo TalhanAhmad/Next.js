@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SiteFooter } from "@/components/site-footer";
 
 export default function Home() {
   return (
@@ -79,14 +80,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="site-footer">
-        <a className="wordmark footer-wordmark" href="#top">
-          <span className="wordmark-mark" aria-hidden="true">m</span>
-          <span>morrow<span className="wordmark-period">.</span></span>
-        </a>
-        <p>Independent by nature. Open to good things.</p>
-        <a className="footer-email" href="mailto:hello@morrow.studio">Say hello <span aria-hidden="true">↗</span></a>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

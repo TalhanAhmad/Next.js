@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import Link from "next/link";
+import { SiteFooter } from "@/components/site-footer";
 import { registerAction } from "./actions";
 
 type RegisterPageProps = {
@@ -66,10 +67,7 @@ export default function RegisterPage({ searchParams }: RegisterPageProps) {
           </form>
         </div>
       </section>
-      <footer className="auth-footer">
-        <span>Independent by nature.</span>
-        <span>© Morrow Studio</span>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

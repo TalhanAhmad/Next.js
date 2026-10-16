@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import Link from "next/link";
+import { SiteFooter } from "@/components/site-footer";
 import { LoginForm } from "./login-form";
 
 type LoginPageProps = {
@@ -41,10 +42,7 @@ export default function LoginPage({ searchParams }: LoginPageProps) {
           <LoginForm />
         </div>
       </section>
-      <footer className="auth-footer">
-        <span>Independent by nature.</span>
-        <span>© Morrow Studio</span>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

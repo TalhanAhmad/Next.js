@@ -3,6 +3,7 @@ import Link from "next/link";
 import { auth, signOut } from "@/auth";
 import { redirect } from "next/navigation";
 import { connection } from "next/server";
+import { SiteFooter } from "@/components/site-footer";
 
 export default function DashboardPage() {
   return (
@@ -124,14 +125,7 @@ async function AuthenticatedDashboard() {
           </div>
         </section>
       </main>
-      <footer className="dashboard-footer">
-        <Link className="wordmark footer-wordmark" href="/">
-          <span className="wordmark-mark" aria-hidden="true">m</span>
-          <span>morrow<span className="wordmark-period">.</span></span>
-        </Link>
-        <span>Independent by nature. Open to good things.</span>
-        <a href="mailto:hello@morrow.studio">Need a hand? <span aria-hidden="true">↗</span></a>
-      </footer>
+      <SiteFooter />
     </>
   );
 }
