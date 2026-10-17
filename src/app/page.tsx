@@ -19,20 +19,12 @@ export default function Home() {
         </div>
       </nav>
 
-      <section className="hero" id="top">
-        <div className="hero-copy">
-          <p className="eyebrow"><span className="eyebrow-dot" /> Independent creative studio</p>
-          <h1>Make space<br />for <em>good</em> ideas.</h1>
-          <p className="hero-description">
-            Morrow is a small studio for thoughtful identities and digital
-            experiences. We help good people make work that means something.
-          </p>
-          <a className="text-link" href="#work">
-            Explore our work <span className="link-arrow" aria-hidden="true">↘</span>
-          </a>
-          <span className="hero-index" aria-hidden="true">01 / 03</span>
-        </div>
+      <section className="hero-intro" id="top">
+        <p className="eyebrow"><span className="eyebrow-dot" /> Independent creative studio</p>
+        <h1>Make space<br />for <em>good</em> ideas.</h1>
+      </section>
 
+      <section className="hero-visual" aria-label="Morrow Studio in focus">
         <figure className="hero-image">
           <Image
             src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1500&q=85"
@@ -47,6 +39,19 @@ export default function Home() {
           </figcaption>
           <span className="image-stamp" aria-hidden="true">M<br />—<br />01</span>
         </figure>
+      </section>
+
+      <section className="hero-summary" aria-label="About Morrow Studio">
+        <p className="hero-description">
+          Morrow is a small studio for thoughtful identities and digital
+          experiences. We help good people make work that means something.
+        </p>
+        <div className="hero-summary-action">
+          <a className="text-link" href="#work">
+            Explore our work <span className="link-arrow" aria-hidden="true">↘</span>
+          </a>
+          <span className="hero-index" aria-hidden="true">01 / 03</span>
+        </div>
       </section>
 
       <section className="work-section" id="work">

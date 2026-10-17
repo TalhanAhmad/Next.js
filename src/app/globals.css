@@ -98,30 +98,11 @@ a:focus-visible {
   color: var(--accent);
 }
 
-.hero {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: clamp(36px, 7vw, 104px);
-  align-items: center;
-  padding: clamp(64px, 9vw, 132px) 0 90px;
+.hero-intro {
+  padding: clamp(64px, 9vw, 112px) 0 32px;
 }
 
-.hero-copy {
-  position: relative;
-  padding: 12px 0 40px;
-}
-
-.eyebrow {
-  margin: 0;
-  color: var(--muted);
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.13em;
-  line-height: 1.5;
-  text-transform: uppercase;
-}
-
-.hero-copy .eyebrow {
+.hero-intro .eyebrow {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -149,10 +130,10 @@ h2 {
   letter-spacing: 0;
 }
 
-.hero h1 {
+.hero-intro h1 {
   max-width: 660px;
-  margin: 28px 0 22px;
-  font-size: clamp(64px, 8vw, 112px);
+  margin: 26px 0 0;
+  font-size: clamp(64px, 9vw, 118px);
   line-height: 0.93;
 }
 
@@ -164,10 +145,30 @@ h2 em {
 
 .hero-description {
   max-width: 390px;
-  margin-bottom: 30px;
+  margin: 0;
   color: var(--muted);
   font-size: 15px;
   line-height: 1.8;
+}
+
+.hero-visual {
+  padding-top: 4px;
+}
+
+.hero-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  padding: 28px 0 48px;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-summary-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .text-link {
@@ -191,9 +192,6 @@ h2 em {
 }
 
 .hero-index {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   color: #8c918a;
   font-size: 10px;
   letter-spacing: 0.1em;
@@ -202,7 +200,7 @@ h2 em {
 .hero-image {
   position: relative;
   min-width: 0;
-  height: clamp(390px, 48vw, 620px);
+  height: clamp(320px, 44vw, 590px);
   margin-bottom: 0;
   background: #d4d5cb;
 }
@@ -437,18 +435,18 @@ h2 em {
     display: none;
   }
 
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 42px;
-    padding: 66px 0 64px;
+  .hero-intro {
+    padding: 58px 0 28px;
   }
 
-  .hero-copy {
-    padding-bottom: 38px;
-  }
-
-  .hero h1 {
+  .hero-intro h1 {
     font-size: clamp(62px, 13vw, 90px);
+  }
+
+  .hero-summary {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 23px 0 36px;
   }
 
   .hero-image {
